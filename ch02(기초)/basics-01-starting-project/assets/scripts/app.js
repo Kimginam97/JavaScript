@@ -19,8 +19,14 @@ function add() {
     currentResult += enteredNumber;
     // currentResult++;
     createAndWriteOutput('+', initialResult, enteredNumber); // from vendor file
-    logEntries.push(enteredNumber);
-    console.log(logEntries[0]);
+    const logEntry = {
+        operation: 'ADD',
+        prevResult: initialResult,
+        number: enteredNumber,
+        result: currentResult,
+    };
+    logEntries.push(logEntry);
+    console.log(logEntries);
 }
 
 function subtract() {
