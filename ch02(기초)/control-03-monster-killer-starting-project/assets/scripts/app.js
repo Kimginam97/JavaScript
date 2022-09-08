@@ -186,8 +186,12 @@ function printLogHandler() {
         console.log('---------------');
     }
 
-    for (let i = 10; i > 0; i--) {
-        console.log(i);
+    // for (let i = 10; i > 0; i--) {
+    //     console.log(i);
+    // }
+
+    for (const logEntry of battleLog) {
+        console.log(logEntry);
     }
 
     console.log(battleLog);
