@@ -1,3 +1,4 @@
-console.log(userName);
+'use strict';
+userName = 'Max';
 
-var userName = 'Max';
+console.log(userName);
