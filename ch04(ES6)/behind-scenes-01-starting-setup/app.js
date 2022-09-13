@@ -1,4 +1,10 @@
-'use strict';
-userName = 'Max';
+function getName() {
+    return prompt('Your name: ', '');
+}
 
-console.log(userName);
+function greet() {
+    const userName = getName();
+    console.log('Hello ' + userName);
+}
+
+greet();
