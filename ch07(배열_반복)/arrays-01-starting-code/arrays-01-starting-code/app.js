@@ -34,6 +34,12 @@ hobbies.shift(); // 모든요소를 왼쪽 첫번째는 삭제
 console.log(hobbies);
 
 hobbies[1] = 'Coding';
-hobbies[5] = 'Reading';
+// hobbies[5] = 'Reading';
+console.log(hobbies);
+
+hobbies.splice(1, 0, 'Good Food');
+console.log(hobbies);
+
+const removedElements = hobbies.splice(-2, 1);
 console.log(hobbies);
 
