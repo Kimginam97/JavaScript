@@ -53,6 +53,8 @@ console.log(storedResults, testResults);
 console.log(testResults.indexOf(1.5));
 console.log(testResults.lastIndexOf(1.5));
 
+console.log(testResults.includes(10.99));
+
 const personalData = [{ name: 'Max' }, { name: 'Manuel' }];
 console.log(personalData.indexOf({ name: 'Manuel' })); //-1 반환
 
