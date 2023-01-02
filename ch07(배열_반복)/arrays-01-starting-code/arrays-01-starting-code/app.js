@@ -54,4 +54,18 @@ console.log(testResults.indexOf(1.5));
 console.log(testResults.lastIndexOf(1.5));
 
 const personalData = [{ name: 'Max' }, { name: 'Manuel' }];
-console.log(personalData.indexOf({ name: 'Manuel' }));
+console.log(personalData.indexOf({ name: 'Manuel' })); //-1 반환
+
+const manuel = personalData.find((person, idx, persons) => { 
+    return person.name === 'Manuel';
+});
+
+manuel.name = 'Anna';
+
+console.log(manuel, personalData);
+
+const maxIndex = personalData.findIndex((person, idx, persons) => { 
+    return person.name === 'Max';
+});
+
+console.log(maxIndex);
