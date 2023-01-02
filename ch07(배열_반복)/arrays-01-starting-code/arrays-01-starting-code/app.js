@@ -26,20 +26,26 @@
 
 // console.log(personalData[2]);
 
-const hobbies = ['Sports', 'Cooking'];
-hobbies.push('Reading');
-hobbies.unshift('Coding'); // 모든요소를 오른쪽
-const poppedValue = hobbies.pop();
-hobbies.shift(); // 모든요소를 왼쪽 첫번째는 삭제
-console.log(hobbies);
+// const hobbies = ['Sports', 'Cooking'];
+// hobbies.push('Reading');
+// hobbies.unshift('Coding'); // 모든요소를 오른쪽
+// const poppedValue = hobbies.pop();
+// hobbies.shift(); // 모든요소를 왼쪽 첫번째는 삭제
+// console.log(hobbies);
 
-hobbies[1] = 'Coding';
-// hobbies[5] = 'Reading';
-console.log(hobbies);
+// hobbies[1] = 'Coding';
+// // hobbies[5] = 'Reading';
+// console.log(hobbies);
 
-hobbies.splice(1, 0, 'Good Food');
-console.log(hobbies);
+// hobbies.splice(1, 0, 'Good Food');
+// console.log(hobbies);
 
-const removedElements = hobbies.splice(-2, 1);
-console.log(hobbies);
+// const removedElements = hobbies.splice(-2, 1);
+// console.log(hobbies);
 
+const testResults = [1, 5.3, 1.5, 10.99, -5, 10];
+const storedResults = testResults.splice(2); //새 복사본에 저장
+
+testResults.push(5.91);
+
+console.log(storedResults, testResults);
