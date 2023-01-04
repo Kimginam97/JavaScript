@@ -1,5 +1,15 @@
+class Product {
+    title = 'DEFAULT';
+    imageUrl;
+    description;
+    price;
+}
+
+console.log(new Product());
+
 const productList = {
     products: [
+        // new Product()
         {
             title: 'A Pillow',
             imageUrl: 'https://www.maxpixel.net/static/photo/2x/Soft-Pillow-Green-Decoration-Deco-Snuggle-1241878.jpg',
