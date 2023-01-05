@@ -28,21 +28,24 @@ class Person extends AgedPerson{
 //     }
 // }
 
-Person.prototype.printAge = function () {
-    console.log(this.age);
-};
+// Person.prototype.printAge = function () {
+//     console.log(this.age);
+// };
 
-Person.describe = function () {
-    console.log('Creating persons...');
-}
+// Person.describe = function () {
+//     console.log('Creating persons...');
+// }
 
-console.dir(Person);
-console.log(Object);
+// console.dir(Person);
+// console.log(Object);
+
+// const p = new Person();
+// p.greet();
+// p.printAge();
+// console.log(p.lenth);
+// console.log(p.toString());
+// const p2 = new p.__proto__.constructor();
+// console.log(Object.prototype.__proto__);
 
 const p = new Person();
-p.greet();
-p.printAge();
-console.log(p.lenth);
-console.log(p.toString());
-const p2 = new p.__proto__.constructor();
-console.log(Object.prototype.__proto__);
+console.log(p);
