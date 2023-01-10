@@ -17,6 +17,13 @@ buttons.forEach(btn => {
     btn.addEventListener('click', buttonClickHandler);
 })
 
-window.addEventListener('scroll', event => {
+// window.addEventListener('scroll', event => {
+//     console.log(event);
+// });
+
+const form = document.querySelector('form');
+
+form.addEventListener('submit', event => {
+    event.preventDefault(); // 페이지 새로고침 중단
     console.log(event);
-});
+})
