@@ -17,3 +17,6 @@ buttons.forEach(btn => {
     btn.addEventListener('click', buttonClickHandler);
 })
 
+window.addEventListener('scroll', event => {
+    console.log(event);
+});
