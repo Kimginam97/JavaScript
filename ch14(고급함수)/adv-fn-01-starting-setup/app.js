@@ -48,3 +48,16 @@ multiplier = 1.2;
 
 console.log(calculateVatAmount(100));
 console.log(calculateIncomeTaxAmount(200));
+
+let userName = 'Max';
+
+function greetUser() {
+    let name = 'Anna';
+    console.log('Hi ' + name);
+}
+
+let name = 'Maximilian';
+
+userName = 'Manuel';
+
+greetUser();
