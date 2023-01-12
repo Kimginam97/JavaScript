@@ -3,12 +3,16 @@ const output = document.querySelector('p');
 
 const getPosition = (opts) => {
   const promise = new Promise((resolve, reject) => {
-    navigator.geolocation.getCurrentPosition(success => {
-      resolve(success);
-    }, error => {
-      
-    }, opts);
-  })
+    navigator.geolocation.getCurrentPosition(
+      success => {
+        resolve(success);
+      },
+      error => {
+        reject(error)
+      },
+      opts
+    );
+  });
   return promise;
 }
 
@@ -28,9 +32,14 @@ function trackUserHandler() {
       positionData = posData;
       return setTimer(2000);
     })
+    .catch(err => {
+      console.log(err);
+      return 'on we go...';
+    })
     .then(data => {
       console.log(data, positionData);
     })
+    .catch()
   setTimer(1000).then(() => {
     console.log('Timer done!');
   })
