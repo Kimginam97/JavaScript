@@ -72,3 +72,20 @@ console.log([...company]);
 
 const persons = ['Max', 'Manu'];
 console.log(persons);
+
+// ---
+
+const course = {
+  title: 'Javascript - The Complete Guide'
+};
+
+Reflect.setPrototypeOf(course, {
+  toString() {
+    return this.title;
+  }
+});
+
+Reflect.deleteProperty(course, 'title');
+
+console.log(course);
+
