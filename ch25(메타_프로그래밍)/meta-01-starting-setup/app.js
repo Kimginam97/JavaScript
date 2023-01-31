@@ -29,12 +29,23 @@ const company = {
         };
         this.curEmployee++;
         return returnValue;
+    },
+    getEmployee: function* employeeGenerator() {
+        // let employee = company.next();
+
+        // while (!employee.done) {
+        //     yield employee.value;
+        //     employee = company.next();
+        // }
+        let currentEmployee = 0;
+        while (currentEmployee < this.employees.length) {
+            yield this.employees[currentEmployee];
+        }
     }
 };
 
-let employee = company.next();
+// for (const employee of company) {
+//     console.log(employee);
+// }
 
-while (!employee.done) {
-    console.log(employee.value);
-    employee = company.next();
-}
+console.log(company.getEmployee().next());
